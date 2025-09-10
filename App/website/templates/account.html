@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="/static/topbar.css">
+    <link rel="stylesheet" href="/static/account.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="pages">
+            <a href="/">STORE</a>
+            <a href="/about_us">ABOUT US</a>
+            <a href="/account">ACCOUNT</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h2>Account Information</h2>
+        </div>
+
+        <div class="information">
+            {% if user_data %}
+                <h3>Name: {{ user_data[1] + " " + user_data[2] }}</h3>
+                <h3>Email: {{ user_data[3] }}</h3>
+                <h3>Balance: {{ user_data[5] }}$</h3>
+            {% endif %}
+        </div>
+
+        <div class="logout">
+            <a href="/logout">
+                <img src="{{url_for('static', filename='logout.png')}}" class="logout_image" />
+            </a>
+        </div>
+    </div>
+
+    <!-- <div class="card_container">
+        <h2>Invest Cash</h2>
+        <form method="post">
+            <div class="form_group">
+                <label for="invest_date">Invest Date:</label>
+                <input type="date" id="invest_date" name="invest_date" placeholder="DD/MM/YY" required>
+            </div>
+            <div class="form_group">
+                <label for="amount">Cash:</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter Amount" required>
+            </div>
+            <button type="submit">Submit</button>
+
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <h2 class="flash">{{ messages[-1] }}</h2>
+                {% endif %}
+            {% endwith %}   
+        </form>
+    </div> -->
+</body>
+</html>

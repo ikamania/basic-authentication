@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="/static/topbar.css">
+    <link rel="stylesheet" href="/static/store.css">
+    <style>
+        .pages > * {
+            margin-bottom: 3px;
+        }
+
+        .pages > :first-child {
+            border-bottom: 3px solid rgb(212, 145, 145);
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="pages">
+            <a href="/">STORE</a>
+            <a href="/about_us">ABOUT US</a>
+            {% if logged %}
+                <a href="/account">ACCOUNT</a>
+            {% else %}
+                <a href="/login">LOGIN</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <h2 style="
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    ">
+        UNDER DEVELOPMENT
+    </h2>
+
+    <!-- <div class="content">
+        <div class="item">
+
+        </div>
+        <div class="item">
+            
+        </div>
+        <div class="item">
+            
+        </div>
+        <div class="item">
+            
+        </div>
+        <div class="item">
+            
+        </div>
+    </div> -->
+</body>
+</html>

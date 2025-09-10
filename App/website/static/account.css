@@ -1,0 +1,105 @@
+body {
+    width: 100vw;
+    font-family: "Montserrat";
+}
+
+.pages > * {
+    margin-bottom: 3px;
+}
+
+.pages > :nth-child(3) {
+    border-bottom: 3px solid rgb(105, 165, 131);
+    margin-bottom: 0;
+}
+
+.container {
+    margin-top: 8%;
+    margin-left: 5%;
+    width: 350px;
+    height: 250px;
+    border: 1px solid gray;
+    border-radius: 2%;
+    padding: 1%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;    
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+}
+
+.header > h2 {
+    border-bottom: 1px solid gray;
+    height: fit-content;
+    padding-bottom: 2%;
+}
+
+.logout {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px;
+}
+
+.logout_image {
+    width: 30px;
+}
+
+.card_container {
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 350px;
+    border: 1px solid gray;
+    border-radius: 2%;
+    padding: 1%;    
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card_container > h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.form_group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: textfield;
+}
+
+button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+.flash {
+    color: red;
+    font-size: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 15px;
+}
